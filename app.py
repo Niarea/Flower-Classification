@@ -8,10 +8,10 @@ import streamlit as st
 st.header('Dental Classification CNN Model')
 
 # Class names
-class_names = ['Calculus', 'Dental Caries', 'Gingivitis', 'Hypodontia', 'Tooth Discoloration']
+class_names = ['daisy', 'dandelion', 'rose', 'sunflower', 'tulip']
 
 # Load the model
-model = load_model('model2.keras')
+model = load_model('Flower_Recog_Model.h5')
 
 def classify_images(image):
     # Resize and preprocess the image
